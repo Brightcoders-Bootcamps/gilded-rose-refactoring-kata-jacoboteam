@@ -1,4 +1,5 @@
 class GildedRose
+  attr_reader :items
   def initialize(items)
     @items = items
   end
@@ -28,6 +29,7 @@ class GildedRose
           end
         end
       end
+      
       if item.name != "Sulfuras, Hand of Ragnaros"
         item.sell_in = item.sell_in - 1
       end
@@ -47,6 +49,9 @@ class GildedRose
             item.quality = item.quality + 1
           end
         end
+      end
+      if item.name == 'Conjured'
+        item.quality = item.quality - 1
       end
     end
   end
