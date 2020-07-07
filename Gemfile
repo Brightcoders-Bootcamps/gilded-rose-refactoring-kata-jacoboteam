@@ -6,5 +6,8 @@ gem "rubycritic"
 gem "rubocop"
 gem "rspec"
 gem 'byebug'
-gem 'simplecov-small-badge'
+gem 'rubycritic-small-badge', :require => false
+gem 'rake'
+gem 'reek'
 # gem "rails"
+

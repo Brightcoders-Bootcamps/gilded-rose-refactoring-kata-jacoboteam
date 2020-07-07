@@ -9,14 +9,15 @@ class Functions
   end
 
   def backstage(item)
-    if item.quality.positive?
+    if item.quality > 0
       if item.quality < 50
         item.quality += 1
-      elsif item.sell_in <= 5
-        item.quality += 1
+        if item.sell_in <= 5
+          item.quality += 1
+        end
+      else
+       item.quality = 0
       end
-    else
-      item.quality = 0
     end
   end
 
@@ -38,7 +39,7 @@ class Functions
 
   def normal(item)
     unless item.quality > 50
-      if item.quality.positive?
+      if item.quality > 0
         if item.sell_in <= 0
           item.quality -= 2
         else

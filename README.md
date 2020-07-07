@@ -130,3 +130,6 @@ En [este elnace](setup/README.md) se describen los pasos necesarios para ejecuta
 - [Back to Basics: SOLID](https://thoughtbot.com/blog/back-to-basics-solid)
 - [SOLID Principles](https://www.netguru.com/codestories/solid-principles-1-single-responsibility-principle) 
 
+### Mi Score En carpeta APP (Aplicación)
+![Score_App](badges/rubycritic_badge_score.svg)
+
